@@ -236,6 +236,105 @@ Set3_5=Brew('qualitative', qualitative_from_scheme(Set3, 5), 'Set3', print_safe=
 Set3_4=Brew('qualitative', qualitative_from_scheme(Set3, 4), 'Set3', print_safe=True)
 Set3_3=Brew('qualitative', qualitative_from_scheme(Set3, 3), 'Set3', photocopy_safe=True,print_safe=True)
 
+BrBG=['#543005', '#8C510A', '#A6611A', '#BF812D', '#D8B365', '#DFC27D', '#F6E8C3', '#F5F5F5', '#C7EAE5', '#80CDC1', '#5AB4AC', '#35978F', '#018571', '#01665E', '#003C30']
+BrBg11=Brew('diverging', diverging_from_scheme(BrBg, 11), 'BrBg', colorblind_safe=True)
+BrBg10=Brew('diverging', diverging_from_scheme(BrBg, 10), 'BrBg', colorblind_safe=True)
+BrBg9=Brew('diverging', diverging_from_scheme(BrBg, 9), 'BrBg', colorblind_safe=True)
+BrBg8=Brew('diverging', diverging_from_scheme(BrBg, 8), 'BrBg', colorblind_safe=True)
+BrBg7=Brew('diverging', diverging_from_scheme(BrBg, 7), 'BrBg', colorblind_safe=True)
+BrBg6=Brew('diverging', diverging_from_scheme(BrBg, 6), 'BrBg', colorblind_safe=True, print_safe=True)
+BrBg5=Brew('diverging', diverging_from_scheme(BrBg, 5), 'BrBg', colorblind_safe=True, print_safe=True)
+BrBg4=Brew('diverging', diverging_from_scheme(BrBg, 4), 'BrBg', colorblind_safe=True, print_safe=True)
+BrBg3=Brew('diverging', diverging_from_scheme(BrBg, 3), 'BrBg', colorblind_safe=True, print_safe=True)
+
+PiYG=['#8E0152', '#C51B7D', '#D01C8B', '#DE77AE', '#E9A3C9', '#F1B6DA', '#FDE0EF', '#F7F7F7', '#E6F5D0', '#B8E186', '#A1D76A', '#7FBC41', '#4DAC26', '#4D9221', '#276419']
+PiYG11=Brew('diverging', diverging_from_scheme(PiYG, 11), 'PiYG', colorblind_safe=True)
+PiYG10=Brew('diverging', diverging_from_scheme(PiYG, 10), 'PiYG', colorblind_safe=True)
+PiYG9=Brew('diverging', diverging_from_scheme(PiYG, 9), 'PiYG', colorblind_safe=True)
+PiYG8=Brew('diverging', diverging_from_scheme(PiYG, 8), 'PiYG', colorblind_safe=True)
+PiYG7=Brew('diverging', diverging_from_scheme(PiYG, 7), 'PiYG', colorblind_safe=True)
+PiYG6=Brew('diverging', diverging_from_scheme(PiYG, 6), 'PiYG', colorblind_safe=True)
+PiYG5=Brew('diverging', diverging_from_scheme(PiYG, 5), 'PiYG', colorblind_safe=True)
+PiYG4=Brew('diverging', diverging_from_scheme(PiYG, 4), 'PiYG', colorblind_safe=True, print_safe=True)
+PiYG3=Brew('diverging', diverging_from_scheme(PiYG, 3), 'PiYG', colorblind_safe=True, print_safe=True)
+
+PRGn=['#40004B', '#762A83', '#7B3294', '#9970AB', '#AF8DC3', '#C2A5CF', '#E7D4E8', '#F7F7F7', '#D9F0D3', '#A6DBA0', '#7FBF7B', '#5AAE61', '#008837', '#1B7837','#00441B']
+PrGn11=Brew('diverging', diverging_from_scheme(PRGn, 11), 'PRGn', colorblind_safe=True)
+PrGn10=Brew('diverging', diverging_from_scheme(PRGn, 10), 'PRGn', colorblind_safe=True)
+PrGn9=Brew('diverging', diverging_from_scheme(PRGn, 9), 'PRGn', colorblind_safe=True)
+PrGn8=Brew('diverging', diverging_from_scheme(PRGn, 8), 'PRGn', colorblind_safe=True)
+PrGn7=Brew('diverging', diverging_from_scheme(PRGn, 7), 'PRGn', colorblind_safe=True)
+PrGn6=Brew('diverging', diverging_from_scheme(PRGn, 6), 'PRGn', colorblind_safe=True, print_safe=True)
+PrGn5=Brew('diverging', diverging_from_scheme(PRGn, 5), 'PRGn', colorblind_safe=True, print_safe=True)
+PrGn4=Brew('diverging', diverging_from_scheme(PRGn, 4), 'PRGn', colorblind_safe=True, print_safe=True)
+PrGn3=Brew('diverging', diverging_from_scheme(PRGn, 3), 'PRGn', colorblind_safe=True, print_safe=True)
+
+PuOr=['#7F3B08', '#B35806', '#E66101', '#E08214', '#F1A340', '#FDB863', '#FEE0B6', '#F7F7F7', '#D8DAEB', '#B2ABD2', '#998EC3', '#8073AC', '#5E3C99', '#542788', '#2D004B']
+PuOr11=Brew('diverging', diverging_from_scheme(PuOr, 11), 'PuOr', colorblind_safe=True)
+PuOr10=Brew('diverging', diverging_from_scheme(PuOr, 10), 'PuOr', colorblind_safe=True)
+PuOr9=Brew('diverging', diverging_from_scheme(PuOr, 9), 'PuOr', colorblind_safe=True)
+PuOr8=Brew('diverging', diverging_from_scheme(PuOr, 8), 'PuOr', colorblind_safe=True)
+PuOr7=Brew('diverging', diverging_from_scheme(PuOr, 7), 'PuOr', colorblind_safe=True)
+PuOr6=Brew('diverging', diverging_from_scheme(PuOr, 6), 'PuOr', colorblind_safe=True)
+PuOr5=Brew('diverging', diverging_from_scheme(PuOr, 5), 'PuOr', colorblind_safe=True)
+PuOr4=Brew('diverging', diverging_from_scheme(PuOr, 4), 'PuOr', colorblind_safe=True, photocopy_safe=True, print_safe=True)
+PuOr3=Brew('diverging', diverging_from_scheme(PuOr, 3), 'PuOr', colorblind_safe=True, photocopy_safe=True, print_safe=True)
+
+RdBu=['#67001F', '#B2182B', '#CA0020', '#D6604D', '#EF8A62', '#F4A582', '#FDDBC7', '#F7F7F7', '#D1E5F0', '#92C5DE', '#67A9CF', '#4393C3', '#0571B0', '#2166AC', '#053061']
+RdBu11=Brew('diverging', diverging_from_scheme(RdBu, 11), 'RdBu', colorblind_safe=True)
+RdBu10=Brew('diverging', diverging_from_scheme(RdBu, 10), 'RdBu', colorblind_safe=True)
+RdBu9=Brew('diverging', diverging_from_scheme(RdBu, 9), 'RdBu', colorblind_safe=True)
+RdBu8=Brew('diverging', diverging_from_scheme(RdBu, 8), 'RdBu', colorblind_safe=True)
+RdBu7=Brew('diverging', diverging_from_scheme(RdBu, 7), 'RdBu', colorblind_safe=True)
+RdBu6=Brew('diverging', diverging_from_scheme(RdBu, 6), 'RdBu', colorblind_safe=True, print_safe=True)
+RdBu5=Brew('diverging', diverging_from_scheme(RdBu, 5), 'RdBu', colorblind_safe=True, print_safe=True)
+RdBu4=Brew('diverging', diverging_from_scheme(RdBu, 4), 'RdBu', colorblind_safe=True, print_safe=True)
+RdBu3=Brew('diverging', diverging_from_scheme(RdBu, 3), 'RdBu', colorblind_safe=True, print_safe=True)
+
+RdGy=['#67001F', '#B2182B', '#CA0020', '#D6604D', '#EF8A62', '#F4A582', '#FDDBC7', '#FFFFFF', '#E0E0E0', '#BABABA', '#999999', '#878787', '#404040', '#4D4D4D', '#1A1A1A']
+RdGy11=Brew('diverging', diverging_from_scheme(RdGy, 11), 'RdGy', colorblind_safe=True)
+RdGy10=Brew('diverging', diverging_from_scheme(RdGy, 10), 'RdGy', colorblind_safe=True)
+RdGy9=Brew('diverging', diverging_from_scheme(RdGy, 9), 'RdGy', colorblind_safe=True)
+RdGy8=Brew('diverging', diverging_from_scheme(RdGy, 8), 'RdGy', colorblind_safe=True)
+RdGy7=Brew('diverging', diverging_from_scheme(RdGy, 7), 'RdGy', colorblind_safe=True)
+RdGy6=Brew('diverging', diverging_from_scheme(RdGy, 6), 'RdGy', colorblind_safe=True)
+RdGy5=Brew('diverging', diverging_from_scheme(RdGy, 5), 'RdGy', colorblind_safe=True, print_safe=True)
+RdGy4=Brew('diverging', diverging_from_scheme(RdGy, 4), 'RdGy', colorblind_safe=True, print_safe=True)
+RdGy3=Brew('diverging', diverging_from_scheme(RdGy, 3), 'RdGy', colorblind_safe=True, print_safe=True)
+
+RdYlBu=['#A50026', '#D73027', '#D7191C', '#F46D43', '#FC8D59', '#FDAE61', '#FEE090', '#FFFFBF', '#E0F3F8', '#ABD9E9', '#91BFDB', '#74ADD1', '#2C7BB6', '#4575B4','#313695']
+RdYlBu11=Brew('diverging', diverging_from_scheme(RdYlBu, 11), 'RdYlBu', colorblind_safe=True)
+RdYlBu10=Brew('diverging', diverging_from_scheme(RdYlBu, 10), 'RdYlBu', colorblind_safe=True)
+RdYlBu9=Brew('diverging', diverging_from_scheme(RdYlBu, 9), 'RdYlBu', colorblind_safe=True)
+RdYlBu8=Brew('diverging', diverging_from_scheme(RdYlBu, 8), 'RdYlBu', colorblind_safe=True)
+RdYlBu7=Brew('diverging', diverging_from_scheme(RdYlBu, 7), 'RdYlBu', colorblind_safe=True)
+RdYlBu6=Brew('diverging', diverging_from_scheme(RdYlBu, 6), 'RdYlBu', colorblind_safe=True, print_safe=True)
+RdYlBu5=Brew('diverging', diverging_from_scheme(RdYlBu, 5), 'RdYlBu', colorblind_safe=True, print_safe=True)
+RdYlBu4=Brew('diverging', diverging_from_scheme(RdYlBu, 4), 'RdYlBu', colorblind_safe=True, print_safe=True)
+RdYlBu3=Brew('diverging', diverging_from_scheme(RdYlBu, 3), 'RdYlBu', colorblind_safe=True, print_safe=True)
+
+RdYlGn=['#A50026', '#D73027', '#D7191C', '#F46D43', '#FC8D59', '#FDAE61', '#FEE090', '#FFFFBF', '#D9EF8B', '#A6D96A', '#91CF60', '#66BD63', '#1A9641', '#1A9850', '#006837']
+RdYlGn11=Brew('diverging', diverging_from_scheme(RdYlGn, 11), 'RdYlGn')
+RdYlGn10=Brew('diverging', diverging_from_scheme(RdYlGn, 10), 'RdYlGn')
+RdYlGn9=Brew('diverging', diverging_from_scheme(RdYlGn, 9), 'RdYlGn')
+RdYlGn8=Brew('diverging', diverging_from_scheme(RdYlGn, 8), 'RdYlGn')
+RdYlGn7=Brew('diverging', diverging_from_scheme(RdYlGn, 7), 'RdYlGn')
+RdYlGn6=Brew('diverging', diverging_from_scheme(RdYlGn, 6), 'RdYlGn')
+RdYlGn5=Brew('diverging', diverging_from_scheme(RdYlGn, 5), 'RdYlGn', print_safe=True)
+RdYlGn4=Brew('diverging', diverging_from_scheme(RdYlGn, 4), 'RdYlGn', print_safe=True)
+RdYlGn3=Brew('diverging', diverging_from_scheme(RdYlGn, 3), 'RdYlGn', print_safe=True)
+
+Spectral=['#9E0142', '#D53E4F', '#D7191C', '#F46D43', '#FC8D59', '#FDAE61', '#FEE08B', '#FFFFBF', '#E6F598', '#ABDDA4', '#99D594', '#66C2A5', '#2B83BA', '#32888D', '#5E4FA2']
+Spectral11=Brew('diverging', diverging_from_scheme(Spectral, 11), 'Spectral')
+Spectral10=Brew('diverging', diverging_from_scheme(Spectral, 10), 'Spectral')
+Spectral9=Brew('diverging', diverging_from_scheme(Spectral, 9), 'Spectral')
+Spectral8=Brew('diverging', diverging_from_scheme(Spectral, 8), 'Spectral')
+Spectral7=Brew('diverging', diverging_from_scheme(Spectral, 7), 'Spectral')
+Spectral6=Brew('diverging', diverging_from_scheme(Spectral, 6), 'Spectral')
+Spectral5=Brew('diverging', diverging_from_scheme(Spectral, 5), 'Spectral', print_safe=True, photocopy_safe=True)
+Spectral4=Brew('diverging', diverging_from_scheme(Spectral, 4), 'Spectral', print_safe=True, photocopy_safe=True)
+Spectral3=Brew('diverging', diverging_from_scheme(Spectral, 3), 'Spectral', print_safe=True, photocopy_safe=True)
+
 brews=[
     BuGn3, BuGn4, BuGn5, BuGn6, BuGn7, BuGn8, BuGn9, 
     BuPu3, BuPu4, BuPu5, BuPu6, BuPu7, BuPu8, BuPu9, 
@@ -265,6 +364,15 @@ brews=[
     Set2_3, Set2_4, Set2_5, Set2_6, Set2_7, Set2_8, 
     Set3_3, Set3_4, Set3_5, Set3_6, Set3_7, Set3_8, Set3_9, Set3_10, Set3_11, Set3_12,
 
+    BrBg3, BrBg4, BrBg5, BrBg6, BrBg7, BrBg8, BrBg9, BrBg10, BrBg11,
+    PiYG3, PiYG4, PiYG5, PiYG6, PiYG7, PiYG8, PiYG9, PiYG10, PiYG11,
+    PrGn3, PrGn4, PrGn5, PrGn6, PrGn7, PrGn8, PrGn9, PrGn10, PrGn11,
+    PuOr3, PuOr4, PuOr5, PuOr6, PuOr7, PuOr8, PuOr9, PuOr10, PuOr11,
+    RdBu3, RdBu4, RdBu5, RdBu6, RdBu7, RdBu8, RdBu9, RdBu10, RdBu11,
+    RdGy3, RdGy4, RdGy5, RdGy6, RdGy7, RdGy8, RdGy9, RdGy10, RdGy11,
+    RdYlBu3, RdYlBu4, RdYlBu5, RdYlBu6, RdYlBu7, RdYlBu8, RdYlBu9, RdYlBu10, RdYlBu11,
+    RdYlGn3, RdYlGn4, RdYlGn5, RdYlGn6, RdYlGn7, RdYlGn8, RdYlGn9, RdYlGn10, RdYlGn11,
+    Spectral3, Spectral4, Spectral5, Spectral6, Spectral7, Spectral8, Spectral9, Spectral10, Spectral11
 ] 
 
 class BrewSelector:
