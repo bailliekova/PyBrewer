@@ -5,6 +5,35 @@ def hex_to_rgb(value):
 def rgb_to_hex(rgb):
     return '#%X%X%X' % rgb
 
+def sequential_from_scheme(scheme, num_bins):
+    sequencedict={
+        3: (3, 6, 9),
+        4: (2, 5, 7, 10),
+        5: (2, 5, 7, 9, 11),
+        6: (2, 4, 6, 7, 9, 11),
+        7: (2, 4, 6, 7, 8, 10, 12),
+        8: (1, 3, 4, 6, 7, 8, 10, 12),
+        9: (1, 3, 4, 6, 7, 8, 10, 11, 13)  
+    }
+    return tuple([scheme[x-1] for x in sequencedict[num_bins]])
+
+def qualitative_from_scheme(scheme, num_bins):
+    return tuple(scheme[:num_bins])
+
+def diverging_from_scheme(scheme, num_bins):
+    divergedict={
+        3: (5, 8, 11),
+        4: (3, 6, 10, 13),
+        5: (3, 6, 8, 10, 13),
+        6: (2, 5, 7, 9, 11, 14),
+        7: (2, 5, 7, 8, 9, 11, 14),
+        8: (2, 4, 6, 7, 9, 10, 12, 14),
+        9: (2, 4, 6, 7, 8, 9, 10, 12, 14),
+        10: (1, 2, 4, 6, 7, 9, 10, 12, 14, 15),
+        11: (1, 2, 4, 6, 7, 8, 9, 10, 12, 14, 15)
+    }
+    return tuple(scheme[x-1] for x in divergedict[num_bins])
+
 class Brew:
     def __init__(self, datatype, colors, scheme, colorblind_safe=False, photocopy_safe=False, print_safe=False):
         self.datatype=datatype
@@ -31,31 +60,3 @@ class Brew:
         for index in range(0, len(self.colors)):
             yield self.colors[index]
 
-def sequence_from_scheme(scheme, num_bins):
-    sequencedict={
-        3: (3, 6, 9),
-        4: (2, 5, 7, 10),
-        5: (2, 5, 7, 9, 11),
-        6: (2, 4, 6, 7, 9, 11),
-        7: (2, 4, 6, 7, 8, 10, 12),
-        8: (1, 3, 4, 6, 7, 8, 10, 12),
-        9: (1, 3, 4, 6, 7, 8, 10, 11, 13)  
-    }
-    return tuple([scheme[x] for x in sequencedict[num_bins]])
-
-def qualitative_from_scheme(scheme, num_bins):
-    return tuple(scheme[:num_bins])
-
-def diverging_from_scheme(scheme, num_bins):
-    divergedict={
-        3: (5, 8, 11),
-        4: (3, 6, 10, 13),
-        5: (3, 6, 8, 10, 13),
-        6: (2, 5, 7, 9, 11, 14),
-        7: (2, 5, 7, 8, 9, 11, 14),
-        8: (2, 4, 6, 7, 9, 10, 12, 14),
-        9: (2, 4, 6, 7, 8, 9, 10, 12, 14),
-        10: (1, 2, 4, 6, 7, 9, 10, 12, 14, 15),
-        11: (1, 2, 4, 6, 7, 8, 9, 10, 12, 14, 15)
-    }
-    return tuple(scheme[x] for x in divergedict[num_bins])
