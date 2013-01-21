@@ -237,15 +237,15 @@ Set3_4=Brew('qualitative', qualitative_from_scheme(Set3, 4), 'Set3', print_safe=
 Set3_3=Brew('qualitative', qualitative_from_scheme(Set3, 3), 'Set3', photocopy_safe=True,print_safe=True)
 
 BrBG=['#543005', '#8C510A', '#A6611A', '#BF812D', '#D8B365', '#DFC27D', '#F6E8C3', '#F5F5F5', '#C7EAE5', '#80CDC1', '#5AB4AC', '#35978F', '#018571', '#01665E', '#003C30']
-BrBg11=Brew('diverging', diverging_from_scheme(BrBg, 11), 'BrBg', colorblind_safe=True)
-BrBg10=Brew('diverging', diverging_from_scheme(BrBg, 10), 'BrBg', colorblind_safe=True)
-BrBg9=Brew('diverging', diverging_from_scheme(BrBg, 9), 'BrBg', colorblind_safe=True)
-BrBg8=Brew('diverging', diverging_from_scheme(BrBg, 8), 'BrBg', colorblind_safe=True)
-BrBg7=Brew('diverging', diverging_from_scheme(BrBg, 7), 'BrBg', colorblind_safe=True)
-BrBg6=Brew('diverging', diverging_from_scheme(BrBg, 6), 'BrBg', colorblind_safe=True, print_safe=True)
-BrBg5=Brew('diverging', diverging_from_scheme(BrBg, 5), 'BrBg', colorblind_safe=True, print_safe=True)
-BrBg4=Brew('diverging', diverging_from_scheme(BrBg, 4), 'BrBg', colorblind_safe=True, print_safe=True)
-BrBg3=Brew('diverging', diverging_from_scheme(BrBg, 3), 'BrBg', colorblind_safe=True, print_safe=True)
+BrBG11=Brew('diverging', diverging_from_scheme(BrBG, 11), 'BrBG', colorblind_safe=True)
+BrBG10=Brew('diverging', diverging_from_scheme(BrBG, 10), 'BrBG', colorblind_safe=True)
+BrBG9=Brew('diverging', diverging_from_scheme(BrBG, 9), 'BrBG', colorblind_safe=True)
+BrBG8=Brew('diverging', diverging_from_scheme(BrBG, 8), 'BrBG', colorblind_safe=True)
+BrBG7=Brew('diverging', diverging_from_scheme(BrBG, 7), 'BrBG', colorblind_safe=True)
+BrBG6=Brew('diverging', diverging_from_scheme(BrBG, 6), 'BrBG', colorblind_safe=True, print_safe=True)
+BrBG5=Brew('diverging', diverging_from_scheme(BrBG, 5), 'BrBG', colorblind_safe=True, print_safe=True)
+BrBG4=Brew('diverging', diverging_from_scheme(BrBG, 4), 'BrBG', colorblind_safe=True, print_safe=True)
+BrBG3=Brew('diverging', diverging_from_scheme(BrBG, 3), 'BrBG', colorblind_safe=True, print_safe=True)
 
 PiYG=['#8E0152', '#C51B7D', '#D01C8B', '#DE77AE', '#E9A3C9', '#F1B6DA', '#FDE0EF', '#F7F7F7', '#E6F5D0', '#B8E186', '#A1D76A', '#7FBC41', '#4DAC26', '#4D9221', '#276419']
 PiYG11=Brew('diverging', diverging_from_scheme(PiYG, 11), 'PiYG', colorblind_safe=True)
@@ -364,7 +364,7 @@ brews=[
     Set2_3, Set2_4, Set2_5, Set2_6, Set2_7, Set2_8, 
     Set3_3, Set3_4, Set3_5, Set3_6, Set3_7, Set3_8, Set3_9, Set3_10, Set3_11, Set3_12,
 
-    BrBg3, BrBg4, BrBg5, BrBg6, BrBg7, BrBg8, BrBg9, BrBg10, BrBg11,
+    BrBG3, BrBG4, BrBG5, BrBG6, BrBG7, BrBG8, BrBG9, BrBG10, BrBG11,
     PiYG3, PiYG4, PiYG5, PiYG6, PiYG7, PiYG8, PiYG9, PiYG10, PiYG11,
     PrGn3, PrGn4, PrGn5, PrGn6, PrGn7, PrGn8, PrGn9, PrGn10, PrGn11,
     PuOr3, PuOr4, PuOr5, PuOr6, PuOr7, PuOr8, PuOr9, PuOr10, PuOr11,
@@ -400,5 +400,3 @@ class BrewSelector:
             return tuple(brew.scheme for brew in self.brews[datatype][num_bins].values() if (not colorblind_safe or brew.colorblind_safe) and (not photocopy_safe or brew.photocopy_safe) and (not print_safe or brew.print_safe))
         except KeyError:
             raise Exception("There are no Brews for that many bins for that datatype")
-    
-    

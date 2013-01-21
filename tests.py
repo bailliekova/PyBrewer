@@ -23,6 +23,9 @@ class SelectorTest(unittest.TestCase):
 	def test_list_schemes_qualitative(self):
 		self.assertEqual(sorted(self.bs.list_schemes('qualitative', 5)), sorted(('Accent', 'Dark2', 'Paired', 'Pastel1', 'Pastel2', 'Set1', 'Set2', 'Set3')))
 
+	def test_list_schemes_diverging(self):
+		self.assertEqual(sorted(self.bs.list_schemes('diverging', 3)), sorted(('BrBG', 'PiYG', 'PRGn', 'PuOr', 'RdBu', 'RdGy', 'RdYlBu', 'RdYlGn', 'Spectral')))	
+
 	def test_get_colorblind_safe(self):
 		self.assertEqual(sorted(self.bs.list_schemes('qualitative', 3, colorblind_safe=True)), sorted(('Dark2', 'Paired', 'Set2')))
 
