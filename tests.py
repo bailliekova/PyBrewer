@@ -4,7 +4,6 @@ from brew import *
 from collections import defaultdict
 
 class SelectorTest(unittest.TestCase):
-	#TODO: write test cases
 	
 	def setUp(self):
 		self.empty_bs=BrewSelector(empty=True)
@@ -19,7 +18,7 @@ class SelectorTest(unittest.TestCase):
 		self.assertEqual(self.bs.get_brew('sequential', 9, 'BuGn'), self.brew_9)
 
 	def test_list_schemes(self):
-		self.assertEqual(sorted(self.bs.list_schemes('sequential', 9)), sorted(('BuGn', 'BuPu', 'GnBu','OrRd', 'PuBu')))
+		self.assertEqual(sorted(self.bs.list_schemes('sequential', 9)), sorted(('BuGn', 'BuPu', 'GnBu','OrRd', 'PuBu', 'PuBuGn', 'PuRd', 'RdPu', 'YlGn', 'YlGnBu', 'YlOrBr', 'YlOrRd')))
 	
 	def test_get_colorblind_safe(self):
 		raise Exception('write this test')
@@ -30,9 +29,11 @@ class SelectorTest(unittest.TestCase):
 
 	def test_get_print_safe(self):
 		schemes=self.bs.list_schemes('sequential', 5, print_safe=True)
-		self.assertEqual(schemes, ('GnBu',))
+		self.assertEqual(sorted(schemes), ('GnBu','PuRd', 'YlGnBu'))
+
 
 class BrewTest(unittest.TestCase):
+
 	def setUp(self):
 		self.brew_9=Brew('sequential', ['#F7FCFD', '#E5F5F9', '#CCECE6','#99D8C9', '#66C2A4', '#41AE76', '#238B45', '#006D2C', '#00441B'], 'BuGn', colorblind_safe=True)
 		self.brew_8=Brew('sequential', ['#F7FCFD', '#E5F5F9', '#CCECE6','#99D8C9', '#66C2A4', '#41AE76', '#238B45', '#005824'], 'BuGn', colorblind_safe=True)
@@ -59,8 +60,6 @@ class BrewTest(unittest.TestCase):
 		self.assertEqual(sequential_from_scheme(self.BuGn, 5), self.brew_5.colors)
 		self.assertEqual(sequential_from_scheme(self.BuGn, 4), self.brew_4.colors)
 		self.assertEqual(sequential_from_scheme(self.BuGn, 3), self.brew_3.colors)
-		
-
 
 if __name__=='__main__':
 	unittest.main()
