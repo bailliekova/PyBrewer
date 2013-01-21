@@ -1,4 +1,4 @@
 PyBrewer
 ========
 
-Python wrapper on Cynthia Brewer's Color Brewer/Static convenience module
+Python wrapper on Cynthia Brewer and Mark Hadden's Color Brewer (http://colorbrewer2.org/).
