@@ -1,5 +1,5 @@
-from brew import *
 from collections import defaultdict
+from brew import *
 
 BuGn=['#F7FCFD', '#EDF8FB', '#E5F5F9', '#CCECE6', '#B2E2E2', '#99D8C9', '#66C2A4', '#41AE76','#2CA25F', '#238B45', '#006D2C', '#005824', '#00441B']
 BuGn9=Brew('sequential', sequential_from_scheme(BuGn, 9), 'BuGn', colorblind_safe=True)

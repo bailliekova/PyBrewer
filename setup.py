@@ -10,5 +10,5 @@ setup(
     license='LICENSE.txt',
     description='A Python wrapper for ColorBrewer2.org',
     long_description=open('README.md').read(),
-    requires=['collection']
+    install_requires=['collections'],
 )

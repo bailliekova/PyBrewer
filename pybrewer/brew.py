@@ -33,9 +33,15 @@ def sequential_from_scheme(scheme, num_bins):
     return tuple([scheme[x-1] for x in sequencedict[num_bins]])
 
 def qualitative_from_scheme(scheme, num_bins):
+    """
+    Similar to sequential_from_scheme above, generates brew colors from full scheme. See http://www.albany.edu/faculty/fboscoe/papers/harrower2003.pdf, table 2.
+    """
     return tuple(scheme[:num_bins])
 
 def diverging_from_scheme(scheme, num_bins):
+    """
+    Returns brew colors from full scheme. Pattern of colors to return from http://www.albany.edu/faculty/fboscoe/papers/harrower2003.pdf, table 3.
+    """
     divergedict={
         3: (5, 8, 11),
         4: (3, 6, 10, 13),
@@ -50,7 +56,14 @@ def diverging_from_scheme(scheme, num_bins):
     return tuple(scheme[x-1] for x in divergedict[num_bins])
 
 class Brew:
+    """
+    A Brew represents a color pallete from ColorBrewer2.org. Each Brew has an associated datatype as well as the attributes colorblind_safe, print_safe, and photocopy_safe, which I hope are self explanatory. 
+    """
     def __init__(self, datatype, colors, scheme, colorblind_safe=False, photocopy_safe=False, print_safe=False):
+        """
+        Create new Brew object. 
+        TODO: specify keyword argument for color format.
+        """
         self.datatype=datatype
         self.colors=tuple(colors)
         self.scheme=scheme
@@ -62,6 +75,15 @@ class Brew:
     def __eq__(self, other):
         return self.datatype==other.datatype and self.colors==other.colors and self.scheme==other.scheme and self.colorblind_safe==other.colorblind_safe and self.photocopy_safe==other.photocopy_safe and self.print_safe==other.print_safe
         
+    def __len__(self):
+        return len(self.colors)
+
+    def __getattr__(self, key):
+        return self.colors[key]
+
+    def __iter__(self):
+        return iter(self.colors)
+
     def hexColors(self):
         return self.colors
     
