@@ -1,11 +1,26 @@
 def hex_to_rgb(value):
+    """
+    converts a hex value to an rbg tuple.
+    >>>hex_to_rgb('#FFFFFF')
+    (255, 255, 255)
+    """
     value = value.lstrip('#')
     return tuple(int(value[i:i+2], 16) for i in range(0, 6, 2))
 
 def rgb_to_hex(rgb):
+    """
+    converts an rgb tuple to a hex string.
+    >>>rgb_to_hex((255,255,255))
+    '#FFFFFF'
+    """
     return '#%X%X%X' % rgb
 
 def sequential_from_scheme(scheme, num_bins):
+    """
+    Each sequential scheme in Colorbrewer has 13 values, and a subset of these is returned depending on the number of bins selected by the user. 
+    This is a utility function which returns the colors in a specific brew given the entire scheme. 
+    For details see: http://www.albany.edu/faculty/fboscoe/papers/harrower2003.pdf, table 1
+    """
     sequencedict={
         3: (3, 6, 9),
         4: (2, 5, 7, 10),
